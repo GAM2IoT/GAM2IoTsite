@@ -25,37 +25,25 @@ updateCarousel();
 // Gestion du panier
 const cart = [];
 
-document.getElementById('add-to-cart').addEventListener('click', () => {
-    const quantity = document.getElementById('quantity').value;
-    const model = document.getElementById('model').value;
-    const price = model === 'offre1' ? 300 : 650;
+document.getElementById("add-to-cart").addEventListener("click", function() {
+    const quantity = document.getElementById("quantity").value;
+    const model = document.getElementById("model").value;
 
-    cart.push({ model, quantity: parseInt(quantity, 10), price });
-    updateCartPage();
+    // Récupérer le panier actuel (ou créer un nouveau tableau s'il n'existe pas)
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    // Ajouter l'article au panier
+    cart.push({
+        model: model,
+        quantity: parseInt(quantity)
+    });
+
+    // Stocker le panier mis à jour dans le localStorage
+    localStorage.setItem("cart", JSON.stringify(cart));
+
+    alert("Article ajouté au panier !");
 });
 
-function updateCartPage() {
-    const cartItemsDiv = document.getElementById('cart-items');
-    cartItemsDiv.innerHTML = '';
-
-    if (cart.length === 0) {
-        cartItemsDiv.innerHTML = '<p>Votre panier est vide.</p>';
-    } else {
-        cart.forEach((item, index) => {
-            const itemDiv = document.createElement('div');
-            itemDiv.innerHTML = `
-                <p>${item.model} - Quantité : ${item.quantity} - Prix : ${item.price * item.quantity} €</p>
-                <button onclick="removeFromCart(${index})">Supprimer</button>
-            `;
-            cartItemsDiv.appendChild(itemDiv);
-        });
-    }
-}
-
-function removeFromCart(index) {
-    cart.splice(index, 1);
-    updateCartPage();
-}
 
 document.getElementById('checkout').addEventListener('click', () => {
     alert('Commande confirmée !');

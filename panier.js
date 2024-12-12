@@ -2,11 +2,11 @@
 const offerDetails = {
     offre1: {
         price: 300,
-        image: "C:\\Users\\Gwénaël\\OneDrive\\Bureau\\BUT\\Instrum avancée\\Projetpuissance\\capteur 1.png"
+        image: "images/capteur 1.png"
     },
     offre2: {
         price: 650,
-        image: "C:\\Users\\Gwénaël\\OneDrive\\Bureau\\BUT\\Instrum avancée\\Projetpuissance\\capteur 2.png"
+        image: "images\capteur 2.png"
     }
 };
 

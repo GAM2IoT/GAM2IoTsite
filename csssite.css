@@ -1,0 +1,177 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #003366;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header .logo {
+    max-width: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.loc{
+    width: 300px;
+    height: 150px;
+    padding: 10px;
+    font-size: 1em;
+}
+
+.team {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.member {
+    text-align: center;
+    margin: 10px;
+}
+
+.member img {
+    max-width: 150px;
+    border-radius: 50%;
+}
+
+.extra {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.extra img {
+    max-width: 300px;
+    border: 1px solid #ccc;
+}
+
+.carousel {
+    position: relative;
+    max-width: 300px;
+}
+
+.carousel-item {
+    display: none;
+    max-width: 100%;
+    height: auto;
+}
+
+.carousel img {
+    max-width: 100%;
+    height: auto;
+}
+
+.carousel .prev, .carousel .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #003366;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.carousel .prev {
+    left: 0;
+}
+
+.carousel .next {
+    right: 0;
+}
+
+.product-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.product-details {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.purchase-options {
+    margin-top: 20px;
+}
+
+.purchase-options label {
+    margin-right: 10px;
+}
+
+.purchase-options input,
+.purchase-options select,
+.purchase-options button {
+    margin-right: 10px;
+    padding: 5px;
+}
+
+#cart-items div {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+input, textarea, button {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color:  #003366;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color:  #003366;
+    transform: scale(1.02);
+}
+.contact-info {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.carte{
+    width: 30%;
+    height: auto;
+}

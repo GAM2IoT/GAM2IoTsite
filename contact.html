@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Gam2IoT</title>
+    <link rel="stylesheet" href="csssite.css">
+</head>
+<body>
+    <header>
+        <img src="C:\Users\Gwénaël\Downloads\logo_gam_IoT-removebg-preview.png" alt="Logo Gam2IoT" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="équiê.html">Présentation de l'équipe</a></li>
+                <li><a href="capteur.html">Notre capteur</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="Panier.html">Panier</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <h2>Contactez-nous</h2>
+        <form id="contactForm">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" placeholder="Votre nom" required>
+            
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" placeholder="Votre email" required>
+            
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" rows="5" placeholder="Votre message" required></textarea>
+
+            <button type="submit">Envoyer</button>
+        </form>
+        <div class="contact-info">
+            <p>Email : contact@gam2iot.com</p>
+            <p>Téléphone : +33 6 52 42 62 80</p>
+        </div>
+    </main>
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const message = document.getElementById("message").value;
+
+            console.log("Formulaire soumis :");
+            console.log("Nom :", name);
+            console.log("Email :", email);
+            console.log("Message :", message);
+
+            alert("Votre message a bien été enregistré !");
+        });
+    </script>
+    <footer>
+        <p>&copy; 2024 Gam2IoT. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

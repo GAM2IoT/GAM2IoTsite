@@ -6,7 +6,7 @@ const offerDetails = {
     },
     offre2: {
         price: 650,
-        image: "images\capteur 2.png"
+        image: "images/capteur 2.png"
     }
 };
 

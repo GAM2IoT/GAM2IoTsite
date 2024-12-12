@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <img src="images/logo.png" alt="Logo Gam2IoT" class="logo">
+        <img src="C:\Users\Gwénaël\Downloads\logo_gam_IoT-removebg-preview.png" alt="Logo Gam2IoT" class="logo">
         <nav>
             <ul>
                 <li><a href="index.html">Accueil</a></li>
@@ -22,48 +22,52 @@
     <main class="sensor-page">
         <section class="product-section">
             <div class="carousel">
-                <img src="images\capteur 1.png" alt="Photo 1" class="carousel-item">
-                <img src="images\capteur 2.png" alt="Photo 2" class="carousel-item">
+                <img src="C:\Users\Gwénaël\OneDrive\Bureau\BUT\Instrum avancée\Projetpuissance\capteur 1.png" alt="Photo 1" class="carousel-item">
+                <img src="C:\Users\Gwénaël\OneDrive\Bureau\BUT\Instrum avancée\Projetpuissance\capteur 2.png" alt="Photo 2" class="carousel-item">
                 <button class="prev">◀</button>
                 <button class="next">▶</button>
             </div>
+            <div class="purchase-options">
+                <label for="quantity">Quantité :</label>
+                <input type="number" id="quantity" min="1" value="1">
+                <label for="model">Modèle :</label>
+                <select id="model">
+                    <option value="offre1">OFFRE 1 : L'essentiel</option>
+                    <option value="offre2">OFFRE 2 : Premium</option>
+                </select>
+                <button id="add-to-cart">Ajouter au panier</button>
+            </div>
             <div class="product-details">
-                <table>
-                    <tr>
-                        <th>OFFRE 1 : L'essentiel</th>
-                        <th>OFFRE 2 : Premium</th>
-                    </tr>
-                    <tr>
-                        <td>Standard</td>
-                        <td>Avancée</td>
-                    </tr>
-                    <tr>
-                        <td>MQTT</td>
-                        <td>MQTT</td>
-                    </tr>
-                    <tr>
-                        <td>Sur secteur</td>
-                        <td>≈ 15h</td>
-                    </tr>
-                    <tr>
-                        <td>Interface : Standard</td>
-                        <td>Interface : Avancée</td>
-                    </tr>
-                    <tr>
-                        <td>300 €</td>
-                        <td>650 €</td>
-                    </tr>
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th>OFFRE 1 : L'essentiel</th>
+                            <th>OFFRE 2 : Premium</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Standard</td>
+                            <td>Avancée</td>
+                        </tr>
+                        <tr>
+                            <td>MQTT</td>
+                            <td>MQTT</td>
+                        </tr>
+                        <tr>
+                            <td>Sur secteur</td>
+                            <td>≈ 15h</td>
+                        </tr>
+                        <tr>
+                            <td>Interface : Standard</td>
+                            <td>Interface : Avancée</td>
+                        </tr>
+                        <tr>
+                            <td>300 €</td>
+                            <td>650 €</td>
+                        </tr>
+                    </tbody>
                 </table>
-                <div class="purchase-options">
-                    <label for="quantity">Quantité :</label>
-                    <input type="number" id="quantity" min="1" value="1">
-                    <label for="model">Modèle :</label>
-                    <select id="model">
-                        <option value="offre1">OFFRE 1 : L'essentiel</option>
-                        <option value="offre2">OFFRE 2 : Premium</option>
-                    </select>
-                    <button id="add-to-cart">Ajouter au panier</button>
-                </div>
             </div>
         </section>
     </main>
